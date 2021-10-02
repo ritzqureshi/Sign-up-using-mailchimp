@@ -12,6 +12,8 @@ app.use(
 );
 
 app.use(express.static("public"));
+// app.use('/static', express.static(path.join(__dirname, 'public')))
+
 
 app.get("/", function(req, res) {
     res.sendFile(__dirname + "/public/sign-up.html");
